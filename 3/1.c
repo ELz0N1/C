@@ -1,33 +1,20 @@
 #include <stdio.h>
 
-int x, y;
-
 int main() {
-    scanf("%d%d", &x, &y);
-    if (y == 0) {
-        printf("Second parameter can't be 0");
-    } else{
-        printf("%d + %d = %d\n", x, y, x + y);
-        printf("%d - %d = %d\n", x, y, x - y);
-        printf("%d * %d = %d\n", x, y, x * y);
-        printf("%d / %d = %d\n", x, y, x / y);
-        printf("%d %% %d = %d\n", x, y, x % y);
-        printf("%d == %d = %d\n", x, y, x == y);
-        printf("%d != %d = %d\n", x, y, x != y);
-        printf("%d < %d = %d\n", x, y, x < y);
-        printf("%d > %d = %d\n", x, y, x > y);
-        printf("%d <= %d = %d\n", x, y, x <= y);
-        printf("%d >= %d = %d\n", x, y, x >= y);
-        printf("%d && %d = %d\n", x, y, x && y);
-        printf("%d || %d = %d\n", x, y, x || y);
-        printf("%d & %d = %d\n", x, y, x & y);
-        printf("%d | %d = %d\n", x, y, x | y);
-        printf("%d ^ %d = %d\n", x, y, x ^ y);
-        printf("%d << %d = %d\n", x, y, x << y);
-        printf("%d >> %d = %d\n", x, y, x >> y);
-        printf("!%d = %d\n", x, !x);
-        printf("~%d = %d\n", x, ~x);
-        printf("-%d = %d\n", x, -x);
+    unsigned long N;
+    scanf("%d", &N);
+
+    int i = 0;
+    while (i<=N) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            printf("fizz buzz\n");
+        } else if (i % 5 == 0) {
+            printf("buzz\n");
+        } else if (i % 3 == 0) {
+            printf("fizz\n");
+        } else printf("%d\n", i);
+        i++;
     }
+
     return 0;
 }
