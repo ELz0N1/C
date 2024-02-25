@@ -50,7 +50,7 @@ void extractDigits(int* arr, size_t length, int X) {
     int tmp = X, len_X = -1;
     
     while (tmp > 0) {
-        len_X+=1;
+        len_X += 1;
         tmp /= 10;
     }
 
