@@ -46,6 +46,7 @@ int findInArr(int* arr, size_t length, int target) {
     return NULL;
 }
 
+//not finished...
 void extractDigits(int* arr, size_t length, int X) {
     int tmp = X, len_X = -1;
     
