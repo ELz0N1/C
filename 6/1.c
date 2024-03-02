@@ -42,7 +42,7 @@ int findInArr(int* arr, size_t length, int target) {
             break;
         }
     }
-    return NULL;
+    return -1;
 }
 
 void extractDigits(int* arr, size_t length, int X) {
