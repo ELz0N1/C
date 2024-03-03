@@ -47,7 +47,7 @@ int findInArr(int* arr, size_t length, int target) {
 }
 
 void extractDigits(int* arr, size_t length, int X) {
-    assert(size >= 10);
+    assert(length >= 10);
     int tmp = X, len_X = -1;
     
     while (tmp) {
