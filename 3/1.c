@@ -2,7 +2,7 @@
 
 int main() {
     unsigned long N;
-    scanf("%d", &N);
+    scanf("%lu", &N);
 
     int i = 0;
     while (i<=N) {
