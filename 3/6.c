@@ -2,7 +2,7 @@
 
 int main() {
     unsigned long L, R;
-    scanf("%d%d", &L, &R);
+    scanf("%lu%lu", &L, &R);
     if (L > R) {
         printf("Error");
     } else { 
