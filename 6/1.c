@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 void scanArr(int* arr, size_t length) {
     for (int i = 0; i < length; i++) {
@@ -46,6 +47,7 @@ int findInArr(int* arr, size_t length, int target) {
 }
 
 void extractDigits(int* arr, size_t length, int X) {
+    assert(size >= 10);
     int tmp = X, len_X = -1;
     
     while (tmp) {
