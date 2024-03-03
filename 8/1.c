@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 void nullCheck (void* ptr) {
     if (ptr == NULL) {
@@ -54,6 +55,7 @@ int findInArr(int* arr, size_t length, int target) {
 }
 
 void extractDigits(int* arr, size_t length, int X) {
+    assert(length >= 10);
     int tmp = X, len_X = -1;
     
     while (tmp) {
