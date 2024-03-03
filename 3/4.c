@@ -2,7 +2,7 @@
 
 int main() {
     unsigned long long N;
-    scanf("%lld", &N);
+    scanf("%llu", &N);
 
     if (N < 2) {
         printf("Error");
