@@ -13,7 +13,7 @@ int isPrime(int number) {
 
 int main() {
     unsigned long long N;
-    scanf("%d", &N);
+    scanf("%llu", &N);
     
     for (int i = 2; i <= N; i++) {
         if (isPrime(i) == 1) {
