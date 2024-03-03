@@ -10,4 +10,5 @@ int main() {
     int x = 5, y = 7;
     swap(&x, &y);
     printf("%d, %d ", x, y);
+    return 0;
 }
