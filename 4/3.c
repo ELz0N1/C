@@ -3,8 +3,8 @@
 
 int GCD(int x, int y) {
     int max_divisor = 0;
-    assert(x >= 0);
-    assert(y >= 0);
+    assert(x > 0);
+    assert(y > 0);
 
 
     for (int i = 1; i <= x; i++) {
