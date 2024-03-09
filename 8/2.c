@@ -88,7 +88,7 @@ int compareArrays(int* arr1, int* arr2, size_t len_arr1, size_t len_arr2) {
 int main() {
     printf("Enter your array: ");
     size_t N = 2;
-    int* arr = (int*) malloc(N * sizeof(int));
+    int* arr = (int*)malloc(N * sizeof(int));
     nullCheck(arr);
     for(size_t i = 0;; i++) {
         int input;
@@ -102,7 +102,7 @@ int main() {
             continue;
         }
         arr[i] = input;
-        int* new_arr = (int*) malloc(2 * N * sizeof(int));
+        int* new_arr = (int*)malloc(2 * N * sizeof(int));
         nullCheck(new_arr);
         for (int j=0; j < N; j++) {
             new_arr[j] = arr[j];
