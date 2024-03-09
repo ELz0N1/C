@@ -87,10 +87,10 @@ int compareArrays(int* arr1, int* arr2, size_t len_arr1, size_t len_arr2) {
 
 int main() {
 
-    int N;
+    unsigned int N;
     printf("Enter N: ");
-    scanf("%d", &N);
-    int* arr = (int*) malloc(N * sizeof(int));
+    scanf("%u", &N);
+    int* arr = (int*)malloc(N * sizeof(int));
     nullCheck(arr);
 
     printf("Enter elements of array: ");
