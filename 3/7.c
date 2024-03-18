@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    unsigned int N, input, ypos = 0, xpos = 0;
+    unsigned int N, input, y_pos = 0, x_pos = 0;
     unsigned long score = 0;
 
     printf("Enter the size of the game field: ");
@@ -14,7 +14,7 @@ int main() {
     while (1) {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (i == ypos && j == xpos) {
+                if (i == y_pos && j == x_pos) {
                     printf("😶 ");
                 } else if (i == N - 1 && j == N - 1) {
                     printf("🍒");
@@ -26,20 +26,20 @@ int main() {
         }
         printf("\n");
 
-        if (ypos == N - 1 && xpos == N - 1) {
+        if (y_pos == N - 1 && x_pos == N - 1) {
             break;
         }
         
         printf("Score: %ld; Enter next step: ", score);
         scanf("%d", &input);
-        if (input == 8 && ypos != 0) {
-            ypos--;
-        } else if (input == 4 && xpos != 0) {
-            xpos--;
-        } else if (input == 5 && ypos != N - 1) {
-            ypos++;
-        } else if (input == 6 && xpos != N - 1) {
-            xpos++;
+        if (input == 8 && y_pos != 0) {
+            y_pos--;
+        } else if (input == 4 && x_pos != 0) {
+            x_pos--;
+        } else if (input == 5 && y_pos != N - 1) {
+            y_pos++;
+        } else if (input == 6 && x_pos != N - 1) {
+            x_pos++;
         } else {
             printf("Invalid value!\n");
             continue;
